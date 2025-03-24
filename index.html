@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quranic and Azkar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Salam Message -->
+        <div class="salat-message">
+            <h1>Salam Alaikum Wa Rahmatullah</h1>
+        </div>
+
+        <!-- Quran Audio Section -->
+        <div class="quran-audio">
+            <h2>Quran Audio</h2>
+            <audio id="quranAudio" controls>
+                <source src="assets/audio/quran_audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="audio-controls">
+                <button id="playPauseBtn">Play</button>
+                <button id="skipBtn">Skip</button>
+                <button id="stopBtn">Stop</button>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                <select id="quranSelect">
+                    <option value="quran1.mp3">Recitation 1</option>
+                    <option value="quran2.mp3">Recitation 2</option>
+                    <!-- Add more recitations -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Azkar Section -->
+        <div class="azkar">
+            <h2>Azkar</h2>
+            <div id="azkarText">SubhanAllah</div>
+            <audio id="azkarAudio" loop>
+                <source src="assets/audio/azkar_audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <!-- Salah Time Section -->
+        <div class="salah-time">
+            <h2>Salah Time</h2>
+            <div id="salahTime">Loading...</div>
+        </div>
+
+        <!-- Weather Section -->
+        <div class="weather">
+            <h2>Weather</h2>
+            <div id="weatherInfo">Loading...</div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

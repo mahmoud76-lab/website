@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2a41;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #0099cc;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quran-audio, .azkar, .salah-time, .weather {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#azkarText {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#salahTime, #weatherInfo {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.audio-controls button {
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+audio {
+    width: 80%;
+}
+
+#volumeControl {
+    width: 100px;
+}
+
+#quranSelect {
+    padding: 5px;
+    margin-left: 10px;
+}
